@@ -99,6 +99,44 @@ int DrawingRandomEllipses(Mat image, char* window_name, RNG rng)
 	return 0;
 }
 
+int DrawingRandomPolylines(Mat image, char *window_name, RNG rng)
+{
+	int lineType = 8;
+
+	for(int i = 0; i < NUMBER; i++)
+	{
+		Point pt[2][3];
+
+		pt[0][0].x = rng.uniform(x_1, x_2);
+		pt[0][0].y = rng.uniform(y_1, y_2);
+		pt[0][1].x = rng.uniform(x_1, x_2);
+		pt[0][1].y = rng.uniform(y_1, y_2);
+		pt[0][2].x = rng.uniform(x_1, x_2);
+		pt[0][2].y = rng.uniform(y_1, y_2);
+		pt[1][0].x = rng.uniform(x_1, x_2);
+		pt[1][0].y = rng.uniform(y_1, y_2);
+		pt[1][1].x = rng.uniform(x_1, x_2);
+		pt[1][1].y = rng.uniform(y_1, y_2);
+		pt[1][2].x = rng.uniform(x_1, x_2);
+		pt[1][2].y = rng.uniform(y_1, y_2);
+
+		const Point* ppt[2] = {pt[0], pt[1]};
+		int npt[]={3, 4};
+
+		polylines(image, ppt, npt, 2, true, randomColor(rng),
+				rng.uniform(1, 10), lineType);
+		
+		imshow(window_name, image);
+		if(waitKey(DELAY) >= 0)
+		{
+			return -1;
+		}
+
+	}
+
+	return 0;
+}
+
 int main(int argc, char** argv)
 {
 	int c;
@@ -121,6 +159,8 @@ int main(int argc, char** argv)
 	c = DrawingRandomEllipses(image, window_name, rng);
 	if(c != 0)	return 0;
 
+	c = DrawingRandomPolylines(image, window_name, rng);
+	if(c != 0)	return 0;
 
 	waitKey(0);
 	return 0;
