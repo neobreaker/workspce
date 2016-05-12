@@ -1,0 +1,3 @@
+/home/neo/workspce/opencv_Laplace/CMakeFiles/edit_cache.dir
+/home/neo/workspce/opencv_Laplace/CMakeFiles/rebuild_cache.dir
+/home/neo/workspce/opencv_Laplace/CMakeFiles/opencv_example.dir
