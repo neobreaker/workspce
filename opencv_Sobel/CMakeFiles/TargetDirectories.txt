@@ -1,0 +1,3 @@
+/home/neo/workspce/opencv_Sobel/CMakeFiles/edit_cache.dir
+/home/neo/workspce/opencv_Sobel/CMakeFiles/rebuild_cache.dir
+/home/neo/workspce/opencv_Sobel/CMakeFiles/opencv_example.dir
