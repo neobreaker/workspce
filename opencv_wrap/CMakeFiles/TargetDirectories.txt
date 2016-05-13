@@ -1,0 +1,3 @@
+/home/neo/workspace/opencv_wrap/CMakeFiles/edit_cache.dir
+/home/neo/workspace/opencv_wrap/CMakeFiles/rebuild_cache.dir
+/home/neo/workspace/opencv_wrap/CMakeFiles/opencv_example.dir
