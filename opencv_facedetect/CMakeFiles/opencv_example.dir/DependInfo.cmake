@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/neo/workspace/opencv_facedetect/opencv_facedetect.cpp" "/home/neo/workspace/opencv_facedetect/CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o"
+  "/home/neo/workspce/opencv_facedetect/opencv_facedetect.cpp" "/home/neo/workspce/opencv_facedetect/CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neo/workspace/opencv_facedetect
+CMAKE_SOURCE_DIR = /home/neo/workspce/opencv_facedetect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neo/workspace/opencv_facedetect
+CMAKE_BINARY_DIR = /home/neo/workspce/opencv_facedetect
 
 # Include any dependencies generated for this target.
 include CMakeFiles/opencv_example.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/opencv_example.dir/flags.make
 
 CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: CMakeFiles/opencv_example.dir/flags.make
 CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: opencv_facedetect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/neo/workspace/opencv_facedetect/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o -c /home/neo/workspace/opencv_facedetect/opencv_facedetect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/neo/workspce/opencv_facedetect/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o -c /home/neo/workspce/opencv_facedetect/opencv_facedetect.cpp
 
 CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neo/workspace/opencv_facedetect/opencv_facedetect.cpp > CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neo/workspce/opencv_facedetect/opencv_facedetect.cpp > CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.i
 
 CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neo/workspace/opencv_facedetect/opencv_facedetect.cpp -o CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neo/workspce/opencv_facedetect/opencv_facedetect.cpp -o CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.s
 
 CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.requires:
 
@@ -90,11 +90,36 @@ opencv_example_EXTERNAL_OBJECTS =
 
 opencv_example: CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o
 opencv_example: CMakeFiles/opencv_example.dir/build.make
+opencv_example: /usr/local/lib/libopencv_xphoto.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_xobjdetect.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_tracking.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_surface_matching.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_structured_light.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_stereo.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_saliency.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_rgbd.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_reg.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_plot.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_optflow.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_line_descriptor.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_fuzzy.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_dpm.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_dnn.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_datasets.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_ccalib.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_bioinspired.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_bgsegm.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_aruco.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_videostab.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_superres.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_stitching.so.3.1.0
-opencv_example: /usr/local/lib/libopencv_shape.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_photo.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_text.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_face.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_ximgproc.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_xfeatures2d.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_shape.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_video.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_objdetect.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_calib3d.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_features2d.so.3.1.0
@@ -102,12 +127,11 @@ opencv_example: /usr/local/lib/libopencv_ml.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_highgui.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_videoio.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_imgcodecs.so.3.1.0
-opencv_example: /usr/local/lib/libopencv_flann.so.3.1.0
-opencv_example: /usr/local/lib/libopencv_video.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_imgproc.so.3.1.0
+opencv_example: /usr/local/lib/libopencv_flann.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_core.so.3.1.0
 opencv_example: CMakeFiles/opencv_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/neo/workspace/opencv_facedetect/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opencv_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/neo/workspce/opencv_facedetect/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opencv_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +148,6 @@ CMakeFiles/opencv_example.dir/clean:
 .PHONY : CMakeFiles/opencv_example.dir/clean
 
 CMakeFiles/opencv_example.dir/depend:
-	cd /home/neo/workspace/opencv_facedetect && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neo/workspace/opencv_facedetect /home/neo/workspace/opencv_facedetect /home/neo/workspace/opencv_facedetect /home/neo/workspace/opencv_facedetect /home/neo/workspace/opencv_facedetect/CMakeFiles/opencv_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/neo/workspce/opencv_facedetect && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neo/workspce/opencv_facedetect /home/neo/workspce/opencv_facedetect /home/neo/workspce/opencv_facedetect /home/neo/workspce/opencv_facedetect /home/neo/workspce/opencv_facedetect/CMakeFiles/opencv_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/opencv_example.dir/depend
 

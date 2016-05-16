@@ -6,7 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/neo/workspace/opencv_facedetect/opencv_facedetect.cpp
+/home/neo/workspce/opencv_facedetect/opencv2_lib.hpp
+stdio.h
+-
+iostream
+-
+opencv2/core.hpp
+-
+opencv2/imgproc.hpp
+-
+opencv2/features2d.hpp
+-
+opencv2/highgui.hpp
+-
+opencv2/calib3d.hpp
+-
+opencv2/xfeatures2d.hpp
+-
+opencv2/objdetect/objdetect.hpp
+-
+
+/home/neo/workspce/opencv_facedetect/opencv_facedetect.cpp
 opencv2/objdetect/objdetect.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -17,6 +37,8 @@ iostream
 -
 stdio.h
 -
+opencv2_lib.hpp
+/home/neo/workspce/opencv_facedetect/opencv2_lib.hpp
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h
@@ -475,4 +497,14 @@ opencv2/opencv.hpp
 /usr/local/include/opencv2/videoio/videoio_c.h
 opencv2/core/core_c.h
 /usr/local/include/opencv2/videoio/opencv2/core/core_c.h
+
+/usr/local/include/opencv2/xfeatures2d.hpp
+opencv2/features2d.hpp
+/usr/local/include/opencv2/opencv2/features2d.hpp
+opencv2/xfeatures2d/nonfree.hpp
+/usr/local/include/opencv2/opencv2/xfeatures2d/nonfree.hpp
+
+/usr/local/include/opencv2/xfeatures2d/nonfree.hpp
+opencv2/features2d.hpp
+/usr/local/include/opencv2/xfeatures2d/opencv2/features2d.hpp
 
