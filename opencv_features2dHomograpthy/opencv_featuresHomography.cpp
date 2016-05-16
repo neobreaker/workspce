@@ -17,11 +17,11 @@ using namespace std;
 int main()
 {
 
-	Mat img_object = imread("/home/neo/image/hana.png",
+	Mat img_object = imread("/home/neo/image/shayagaface01.png",
 			IMREAD_GRAYSCALE);
-	Mat img_scene = imread("/home/neo/image/shayaga03.jpg",
+	Mat img_scene = imread("/home/neo/image/shayaga02.jpg",
 			IMREAD_GRAYSCALE);
-	Mat img_scene_src = imread("/home/neo/image/shayaga03.jpg",1);
+	Mat img_scene_src = imread("/home/neo/image/shayaga02.jpg",1);
 
 	std::vector<KeyPoint> keypoints_object, keypoint_scene;
 	Mat descriptor_object, descriptor_scene;
