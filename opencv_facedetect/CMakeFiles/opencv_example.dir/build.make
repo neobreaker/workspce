@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neo/workspace/opencv_BFMatcher
+CMAKE_SOURCE_DIR = /home/neo/workspace/opencv_facedetect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neo/workspace/opencv_BFMatcher
+CMAKE_BINARY_DIR = /home/neo/workspace/opencv_facedetect
 
 # Include any dependencies generated for this target.
 include CMakeFiles/opencv_example.dir/depend.make
@@ -57,38 +57,38 @@ include CMakeFiles/opencv_example.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/opencv_example.dir/flags.make
 
-CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o: CMakeFiles/opencv_example.dir/flags.make
-CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o: opencv_BFMatcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/neo/workspace/opencv_BFMatcher/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o -c /home/neo/workspace/opencv_BFMatcher/opencv_BFMatcher.cpp
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: CMakeFiles/opencv_example.dir/flags.make
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: opencv_facedetect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/neo/workspace/opencv_facedetect/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o -c /home/neo/workspace/opencv_facedetect/opencv_facedetect.cpp
 
-CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neo/workspace/opencv_BFMatcher/opencv_BFMatcher.cpp > CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.i
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neo/workspace/opencv_facedetect/opencv_facedetect.cpp > CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.i
 
-CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neo/workspace/opencv_BFMatcher/opencv_BFMatcher.cpp -o CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.s
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neo/workspace/opencv_facedetect/opencv_facedetect.cpp -o CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.s
 
-CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o.requires:
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.requires:
 
-.PHONY : CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o.requires
+.PHONY : CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.requires
 
-CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o.provides: CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o.requires
-	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o.provides.build
-.PHONY : CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o.provides
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.provides: CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.requires
+	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.provides.build
+.PHONY : CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.provides
 
-CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o.provides.build: CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.provides.build: CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o
 
 
 # Object files for target opencv_example
 opencv_example_OBJECTS = \
-"CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o"
+"CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o"
 
 # External object files for target opencv_example
 opencv_example_EXTERNAL_OBJECTS =
 
-opencv_example: CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o
+opencv_example: CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o
 opencv_example: CMakeFiles/opencv_example.dir/build.make
 opencv_example: /usr/local/lib/libopencv_videostab.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_superres.so.3.1.0
@@ -107,7 +107,7 @@ opencv_example: /usr/local/lib/libopencv_video.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_imgproc.so.3.1.0
 opencv_example: /usr/local/lib/libopencv_core.so.3.1.0
 opencv_example: CMakeFiles/opencv_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/neo/workspace/opencv_BFMatcher/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opencv_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/neo/workspace/opencv_facedetect/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opencv_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,7 +115,7 @@ CMakeFiles/opencv_example.dir/build: opencv_example
 
 .PHONY : CMakeFiles/opencv_example.dir/build
 
-CMakeFiles/opencv_example.dir/requires: CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o.requires
+CMakeFiles/opencv_example.dir/requires: CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o.requires
 
 .PHONY : CMakeFiles/opencv_example.dir/requires
 
@@ -124,6 +124,6 @@ CMakeFiles/opencv_example.dir/clean:
 .PHONY : CMakeFiles/opencv_example.dir/clean
 
 CMakeFiles/opencv_example.dir/depend:
-	cd /home/neo/workspace/opencv_BFMatcher && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neo/workspace/opencv_BFMatcher /home/neo/workspace/opencv_BFMatcher /home/neo/workspace/opencv_BFMatcher /home/neo/workspace/opencv_BFMatcher /home/neo/workspace/opencv_BFMatcher/CMakeFiles/opencv_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/neo/workspace/opencv_facedetect && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neo/workspace/opencv_facedetect /home/neo/workspace/opencv_facedetect /home/neo/workspace/opencv_facedetect /home/neo/workspace/opencv_facedetect /home/neo/workspace/opencv_facedetect/CMakeFiles/opencv_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/opencv_example.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neo/workspace/opencv_BFMatcher
+CMAKE_SOURCE_DIR = /home/neo/workspace/opencv_facedetect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neo/workspace/opencv_BFMatcher
+CMAKE_BINARY_DIR = /home/neo/workspace/opencv_facedetect
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/neo/workspace/opencv_BFMatcher/CMakeFiles /home/neo/workspace/opencv_BFMatcher/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neo/workspace/opencv_facedetect/CMakeFiles /home/neo/workspace/opencv_facedetect/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/neo/workspace/opencv_BFMatcher/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neo/workspace/opencv_facedetect/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ opencv_example/fast:
 	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/build
 .PHONY : opencv_example/fast
 
-opencv_BFMatcher.o: opencv_BFMatcher.cpp.o
+opencv_facedetect.o: opencv_facedetect.cpp.o
 
-.PHONY : opencv_BFMatcher.o
+.PHONY : opencv_facedetect.o
 
 # target to build an object file
-opencv_BFMatcher.cpp.o:
-	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.o
-.PHONY : opencv_BFMatcher.cpp.o
+opencv_facedetect.cpp.o:
+	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o
+.PHONY : opencv_facedetect.cpp.o
 
-opencv_BFMatcher.i: opencv_BFMatcher.cpp.i
+opencv_facedetect.i: opencv_facedetect.cpp.i
 
-.PHONY : opencv_BFMatcher.i
+.PHONY : opencv_facedetect.i
 
 # target to preprocess a source file
-opencv_BFMatcher.cpp.i:
-	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.i
-.PHONY : opencv_BFMatcher.cpp.i
+opencv_facedetect.cpp.i:
+	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.i
+.PHONY : opencv_facedetect.cpp.i
 
-opencv_BFMatcher.s: opencv_BFMatcher.cpp.s
+opencv_facedetect.s: opencv_facedetect.cpp.s
 
-.PHONY : opencv_BFMatcher.s
+.PHONY : opencv_facedetect.s
 
 # target to generate assembly for a file
-opencv_BFMatcher.cpp.s:
-	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_BFMatcher.cpp.s
-.PHONY : opencv_BFMatcher.cpp.s
+opencv_facedetect.cpp.s:
+	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.s
+.PHONY : opencv_facedetect.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... opencv_example"
-	@echo "... opencv_BFMatcher.o"
-	@echo "... opencv_BFMatcher.i"
-	@echo "... opencv_BFMatcher.s"
+	@echo "... opencv_facedetect.o"
+	@echo "... opencv_facedetect.i"
+	@echo "... opencv_facedetect.s"
 .PHONY : help
 
 

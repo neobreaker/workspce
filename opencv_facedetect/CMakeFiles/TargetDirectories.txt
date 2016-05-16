@@ -1,0 +1,3 @@
+/home/neo/workspace/opencv_facedetect/CMakeFiles/edit_cache.dir
+/home/neo/workspace/opencv_facedetect/CMakeFiles/rebuild_cache.dir
+/home/neo/workspace/opencv_facedetect/CMakeFiles/opencv_example.dir
