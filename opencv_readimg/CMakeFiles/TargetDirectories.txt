@@ -1,0 +1,3 @@
+/home/neo/workspce/opencv_readimg/CMakeFiles/edit_cache.dir
+/home/neo/workspce/opencv_readimg/CMakeFiles/rebuild_cache.dir
+/home/neo/workspce/opencv_readimg/CMakeFiles/opencv_example.dir

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neo/workspce/opencv_example
+CMAKE_SOURCE_DIR = /home/neo/workspce/opencv_readimg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neo/workspce/opencv_example
+CMAKE_BINARY_DIR = /home/neo/workspce/opencv_readimg
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/neo/workspce/opencv_example/CMakeFiles /home/neo/workspce/opencv_example/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neo/workspce/opencv_readimg/CMakeFiles /home/neo/workspce/opencv_readimg/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/neo/workspce/opencv_example/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neo/workspce/opencv_readimg/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ opencv_example/fast:
 	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/build
 .PHONY : opencv_example/fast
 
-example.o: example.cpp.o
+opencv_readimg.o: opencv_readimg.cpp.o
 
-.PHONY : example.o
+.PHONY : opencv_readimg.o
 
 # target to build an object file
-example.cpp.o:
-	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/example.cpp.o
-.PHONY : example.cpp.o
+opencv_readimg.cpp.o:
+	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_readimg.cpp.o
+.PHONY : opencv_readimg.cpp.o
 
-example.i: example.cpp.i
+opencv_readimg.i: opencv_readimg.cpp.i
 
-.PHONY : example.i
+.PHONY : opencv_readimg.i
 
 # target to preprocess a source file
-example.cpp.i:
-	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/example.cpp.i
-.PHONY : example.cpp.i
+opencv_readimg.cpp.i:
+	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_readimg.cpp.i
+.PHONY : opencv_readimg.cpp.i
 
-example.s: example.cpp.s
+opencv_readimg.s: opencv_readimg.cpp.s
 
-.PHONY : example.s
+.PHONY : opencv_readimg.s
 
 # target to generate assembly for a file
-example.cpp.s:
-	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/example.cpp.s
-.PHONY : example.cpp.s
+opencv_readimg.cpp.s:
+	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_readimg.cpp.s
+.PHONY : opencv_readimg.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... opencv_example"
-	@echo "... example.o"
-	@echo "... example.i"
-	@echo "... example.s"
+	@echo "... opencv_readimg.o"
+	@echo "... opencv_readimg.i"
+	@echo "... opencv_readimg.s"
 .PHONY : help
 
 
