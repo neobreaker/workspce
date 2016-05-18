@@ -15,8 +15,10 @@ using namespace cv;
 using namespace cv::xfeatures2d;
 using namespace std;
 
-//version 1.1
-//update  2016/5/16
+//author  neo
+//version 1.2
+//update  2016/5/18
+
 namespace cvlib
 {
 
@@ -29,12 +31,24 @@ public :
 			Mat& descriptor)
 	{
 		int minHessian = 400;
-
 		Ptr<SURF> detector = SURF::create(minHessian);
 		detector->detectAndCompute(img, Mat(),
 				keypoints,
 				descriptor);
 	}
+
+	static void SURFDrawKeyPoints(Mat& src)
+	{
+		int minHessian = 400;
+		Ptr<SURF> detector = SURF::create(minHessian);
+	
+		vector<KeyPoint> keypoint;
+		detector->detect(src, keypoint);
+
+		drawKeypoints(src, keypoint, src, 
+			Scalar::all(-1), DrawMatchesFlags::DEFAULT);
+	}
+
 
 	static void BFGoodMatch(const Mat& descriptor_object, 
 				const Mat& descriptor_scene,
@@ -185,6 +199,25 @@ public :
 				circle(frame, center, radius, 
 						Scalar(255,0,0), 4, 8, 0);
 			}
+		}
+	}
+
+	static void DetectFace(Mat frame, std::vector<Mat>& faces_img,
+			CascadeClassifier face_cascade)
+	{
+
+		std::vector<Rect> faces;
+		Mat frame_gray;
+
+		cvtColor(frame, frame_gray, CV_BGR2GRAY);
+		equalizeHist(frame_gray, frame_gray);
+
+		face_cascade.detectMultiScale(frame_gray,
+				faces, 1.1, 2,
+				0|CV_HAAR_SCALE_IMAGE, Size(30, 30));
+		for(int i = 0; i < faces.size(); i++)
+		{
+			faces_img.push_back( frame_gray(faces[i]));
 		}
 	}
 
