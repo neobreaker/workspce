@@ -57,4 +57,6 @@ CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: /usr/local/include/opencv
 CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: /usr/local/include/opencv2/video/tracking_c.h
 CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: /usr/local/include/opencv2/videoio.hpp
 CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: /usr/local/include/opencv2/videoio/videoio_c.h
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: /usr/local/include/opencv2/xfeatures2d.hpp
+CMakeFiles/opencv_example.dir/opencv_facedetect.cpp.o: /usr/local/include/opencv2/xfeatures2d/nonfree.hpp
 

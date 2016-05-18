@@ -19,9 +19,16 @@ string window_name = "face detect demo";
 RNG rng(12345);
 
 
-int main()
+int main(int argc, char** argv)
 {
 	CvCapture* capture;
+
+	if(argc < 2)
+	{
+		cout <<"./a.out <img path>"<<endl;
+		return -1;
+	}
+
 
 	if(!face_cascade.load(face_cascade_name))
 	{
@@ -33,7 +40,16 @@ int main()
 		cout<<"Load eyes_cascade error\n";
 	}
 
-	Mat face_img = imread("/home/neo/image/shayaga01.jpg", 1);
+	string img_path(argv[1]);
+		
+	Mat face_img = imread(img_path, 1);
+
+	if(!face_img.data)
+	{
+		cout <<"Load img failed"<<endl;
+		return -1;
+	}
+
 //	DetectFace(face_img);
 	CvLib::DrawDetectFaceAndEyes(face_img, face_cascade, eyes_cascade);
 
